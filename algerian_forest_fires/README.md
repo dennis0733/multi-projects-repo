@@ -1,130 +1,126 @@
-Algerian Forest Fires FWI Prediction
-This project predicts the Fire Weather Index (FWI) using the Algerian Forest Fires Dataset. The dataset includes environmental and weather-related attributes collected from two regions of Algeria (Bejaia and Sidi Bel-abbes) during the period from June 2012 to September 2012. The project utilizes regression techniques to develop a prediction model and deploys the model as a simple Flask web application.
+# Algerian Forest Fires FWI Prediction
 
-Dataset Overview
-The Algerian Forest Fires Dataset consists of:
+## Overview
+This project implements a machine learning solution to predict the Fire Weather Index (FWI) using environmental and meteorological data from two regions in Algeria. The system utilizes various regression techniques and is deployed as a web application using Flask.
 
-Instances: 244 total (122 from Bejaia and 122 from Sidi Bel-abbes).
-Attributes:
-11 Features: Including Temperature, Relative Humidity, Wind Speed, Rainfall, and others.
-1 Target Output: Fire Weather Index (FWI).
-Classification Labels:
-Fire: 138 instances.
-Not Fire: 106 instances.
+## Dataset Description
+The project uses the [Algerian Forest Fires Dataset](https://archive.ics.uci.edu/dataset/547/algerian+forest+fires+dataset) from the UCI Machine Learning Repository, which includes:
+- 244 instances (equally split between Bejaia and Sidi Bel-abbes regions)
+- Collection period: June 2012 to September 2012
+- 11 environmental and weather-related features
+- Fire Weather Index (FWI) as the target variable
+- Class distribution: 138 fire instances, 106 non-fire instances
 
-Dataset Link
-https://archive.ics.uci.edu/dataset/547/algerian+forest+fires+dataset
+### Features
+- Temperature
+- Relative Humidity
+- Wind Speed
+- Rainfall
+- And other environmental parameters
 
-Objective
-
-The goal of this project is to predict the Fire Weather Index (FWI) using various regression models and determine the most effective approach. The models evaluated include:
-
-Linear Regression
-Ridge Regression
-Lasso Regression
-ElasticNet Regression
-The best-performing model (Ridge Regression) is then deployed as part of a Flask-based web application.
-
-Project Structure
-
+## Project Structure
+```
 algerian_forest_fires/
-│
-├── application.py                # Flask application
-├── README.md                     # Project documentation
-├── requirements.txt              # Python dependencies
-│
+├── application.py              # Flask web application
+├── requirements.txt            # Project dependencies
 ├── data/
-│   ├── Algerian_forest_fires_dataset_UPDATE.csv  # Original dataset
-│   ├── cleaned_dataset.csv                       # Cleaned and processed dataset
-│
+│   ├── Algerian_forest_fires_dataset_UPDATE.csv
+│   └── cleaned_dataset.csv
 ├── models/
-│   ├── ridge.pkl                 # Trained Ridge Regression model
-│   ├── scaler.pkl                # StandardScaler for preprocessing
-│
+│   ├── ridge.pkl              # Trained model
+│   └── scaler.pkl             # Data preprocessor
 ├── notebooks/
-│   ├── EDA_fires.ipynb           # Exploratory Data Analysis notebook
-│   ├── model_training.ipynb      # Model training and evaluation notebook
-│
-├── templates/
-│   ├── index.html                # Web app input form
-│   ├── home.html                 # Web app results display
+│   ├── EDA_fires.ipynb        # Data analysis
+│   └── model_training.ipynb   # Model development
+└── templates/
+    ├── index.html             # Input form
+    └── home.html              # Results page
+```
 
+## Machine Learning Models
+The project evaluates multiple regression models:
+- Linear Regression
+- Ridge Regression (selected as best performing)
+- Lasso Regression
+- ElasticNet Regression
 
+## Installation
 
-How It Works
-
-Model Training
-
-The dataset is preprocessed to clean and standardize the data.
-
-Multiple regression models are trained and evaluated:
-
-Linear Regression
-Ridge Regression
-Lasso Regression
-ElasticNet Regression
-
-Ridge Regression was selected as the best model based on performance metrics.
-
-Web Application
-
-The Flask framework is used to create a web interface for FWI prediction.
-Users can input environmental parameters such as Temperature, Relative Humidity, Wind Speed, Rainfall, and more.
-The app uses the trained Ridge Regression model to predict the FWI.
-
-How to Run the Project
-1. Clone the Repository
+1. **Clone the Repository**
+```bash
 git clone https://github.com/your-username/algerian-forest-fire-prediction.git
 cd algerian-forest-fire-prediction
+```
 
-2. Set Up the Environment
-Create a virtual environment:
-
+2. **Create Virtual Environment**
+```bash
+# Create environment
 python -m venv venv
 
-Activate the environment:
+# Activate environment
+# For Windows:
+venv\Scripts\activate
+# For macOS/Linux:
+source venv/bin/activate
+```
 
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
-
-Install dependencies:
-
+3. **Install Dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the Flask App
-
+4. **Run the Application**
+```bash
 python application.py
-Open a browser and navigate to http://127.0.0.1:5000/ to access the web app.
+```
 
-Example Usage
-Open the web app.
-Enter values for:
-Temperature
-Relative Humidity
-Wind Speed
-Rainfall
-Other required parameters.
-Click Predict to get the Fire Weather Index (FWI).
+Access the web interface at `http://127.0.0.1:5000/`
 
-Technologies Used
+## Usage Guide
 
-Python: For data preprocessing and model development.
-Scikit-Learn: For regression models and preprocessing.
-Flask: For building the web application.
-HTML/CSS: For the front-end of the web app.
+1. Navigate to the web application
+2. Enter the required environmental parameters:
+   - Temperature
+   - Relative Humidity
+   - Wind Speed
+   - Rainfall
+   - Additional parameters as prompted
+3. Submit the form to receive the predicted Fire Weather Index
 
-Future Enhancements
+## Technologies Used
 
-Add support for predicting classification labels (Fire/Not Fire).
-Improve the web interface with more advanced visualization tools.
-Include more machine learning models for comparison.
+- **Backend Development**
+  - Python 3.x
+  - Flask
+  - Scikit-learn
 
-Acknowledgments
+- **Data Processing**
+  - Pandas
+  - NumPy
+  - Scikit-learn preprocessing tools
 
-Dataset: Algerian Forest Fires Dataset - UCI Machine Learning Repository
+- **Frontend**
+  - HTML
+  - CSS
 
+## Future Development Plans
 
+1. **Enhanced Prediction Capabilities**
+   - Implementation of fire/no-fire classification
+   - Integration of additional machine learning models
+   - Model performance optimization
 
+2. **User Interface Improvements**
+   - Advanced data visualization features
+   - Interactive result analysis tools
+   - Batch prediction capabilities
 
+3. **System Enhancements**
+   - API endpoint development
+   - Enhanced error handling
 
+## Acknowledgments
 
+- UCI Machine Learning Repository for the Algerian Forest Fires Dataset
+- The scientific community for research in forest fire prediction
+- Contributors and maintainers of the open-source libraries used in this project
