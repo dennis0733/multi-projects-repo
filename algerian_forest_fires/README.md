@@ -118,8 +118,7 @@ Access the web interface at `http://127.0.0.1:5000/`
 3. **System Enhancements**
    - API endpoint development
    - Enhanced error handling
-   - Comprehensive logging system
-   - 
+
 ## Acknowledgments
 
 - UCI Machine Learning Repository for the Algerian Forest Fires Dataset
