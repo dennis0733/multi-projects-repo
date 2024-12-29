@@ -1,0 +1,46 @@
+# General system files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Flask and web application logs
+*.log
+
+# Virtual environment directories (if any)
+venv/
+env/
+
+# Python environment files
+*.env
+*.flaskenv
+
+
+# Temporary files
+*.swp
+*.bak
+
+# IDE settings
+.idea/
+
+# Build and distribution directories
+/build/
+/dist/
+
+# Project-specific temp files
+*.log
+*.tmp
+
+# Backup files
+*.bak
+*.swp
+
