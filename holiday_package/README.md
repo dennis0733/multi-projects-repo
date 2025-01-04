@@ -28,11 +28,7 @@ The dataset includes features such as:
 
 The project is organized into the following folders:
 
-* `data`: Contains the raw data (`Travel.csv`) and the cleaned data (`cleaned_travel.csv`) after Exploratory Data Analysis (EDA).
-* `notebooks`: Contains Jupyter notebooks for analysis:
-    * `EDA_holiday.ipynb`: Performs EDA on the dataset.
-    * `model_training.ipynb`: Trains and evaluates machine learning models for customer prediction.
-* `requirements.txt`: Lists the required Python libraries for project execution.
+holiday_package_analysis/ ├── data/ │ ├── raw_data.csv # Original dataset │ └── cleaned_data.csv # Processed dataset ├── notebooks/ │ ├── eda.ipynb # Exploratory data analysis │ └── model_training.ipynb # Model development and evaluation ├── models/ │ ├── random_forest.pkl # Trained Random Forest model │ ├── logistic_regression.pkl # Trained Logistic Regression model │ └── scaler.pkl # Data preprocessor ├── reports/ │ ├── eda_report.html # Automated EDA report │ └── performance_report.html # Model evaluation report ├── scripts/ │ ├── preprocess.py # Data preprocessing script │ └── train_model.py # Model training script └── README.md # Project documentation
 
 ## Analysis and Modeling
 
