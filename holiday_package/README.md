@@ -28,7 +28,14 @@ The dataset includes features such as:
 
 The project is organized into the following folders:
 
-holiday_package_analysis/ ├── data/ │ ├── raw_data.csv # Original dataset │ └── cleaned_data.csv # Processed dataset ├── notebooks/ │ ├── eda.ipynb # Exploratory data analysis │ └── model_training.ipynb # Model development and evaluation ├── models/ │ ├── random_forest.pkl # Trained Random Forest model │ ├── logistic_regression.pkl # Trained Logistic Regression model │ └── scaler.pkl # Data preprocessor ├── reports/ │ ├── eda_report.html # Automated EDA report │ └── performance_report.html # Model evaluation report ├── scripts/ │ ├── preprocess.py # Data preprocessing script │ └── train_model.py # Model training script └── README.md # Project documentation
+holiday_package/
+├── requirements.txt            # Project dependencies
+├── data/
+│   ├── Travel.csv
+│   └── cleaned_travel.csv
+├── notebooks/
+│   ├── EDA_holiday.ipynb        # Data analysis
+│   └── model_training.ipynb   # Model development
 
 ## Analysis and Modeling
 
