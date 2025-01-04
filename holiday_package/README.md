@@ -32,11 +32,15 @@ The project is organized into the following folders:
 
 holiday_package/
 
-├── requirements.txt            # Project dependencies
+├── requirements.txt   # Project dependencies
 ├── data/
+
 │   ├── Travel.csv
 │   └── cleaned_travel.csv
+
+
 ├── notebooks/
+
 │   ├── EDA_holiday.ipynb        # Data analysis
 │   └── model_training.ipynb   # Model development
 
