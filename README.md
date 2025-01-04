@@ -4,8 +4,10 @@ This repository serves as a collection of multiple data science projects. The go
 
 ## Current Projects:
 ### - Algerian Forest Fires Analysis
-### Overview
-Currently, this repository contains a project focused on predicting the occurrence of forest fires in Algeria using various regression models. The **Algerian Forest Fires Dataset** has been used to explore and analyze forest fire occurrences based on different environmental factors, and several machine learning models have been trained to predict the likelihood of fires.
+This project focuses on predicting the occurrence of forest fires in Algeria using the Algerian Forest Fires Dataset. By analyzing environmental factors, the project explores the occurrence of forest fires and trains several regression models to predict the likelihood of future fires.
+
+### - Holiday Package Analysis/Prediction
+This project involves analyzing customer data to provide actionable recommendations for the Policy Maker and Marketing Team. By identifying trends and insights, the analysis supports decision-making processes. Additionally, several machine learning models, including Random Forest, Logistic Regression, and Decision Tree, were implemented to build a predictive model for identifying potential customers likely to purchase the newly introduced travel package.
 
 For more details, refer to the specific project folder, which contains the necessary files, code, and instructions.
 
