@@ -30,7 +30,8 @@ The dataset includes features such as:
 
 The project is organized into the following folders:
 
-holiday_package/
+holiday_package/   
+
 ├── requirements.txt   # Project dependencies
 
 ├── data/
