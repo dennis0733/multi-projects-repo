@@ -4,7 +4,9 @@ This project analyzes customer data from "Trips & Travel.Com" to predict potenti
 
 ## About the Dataset
 
-The dataset includes information about past customers and their travel package purchases. It covers a period of [Data Time Period] and contains various features that might influence package selection.
+The dataset includes information about past customers and their travel package purchases. It contains various features that might influence package selection.
+
+The dataset is collected from https://www.kaggle.com/datasets/susant4learning/holiday-package-purchase-prediction
 
 ### Context
 
@@ -52,6 +54,20 @@ This project involves the following steps:
 
 3. **Model Selection:**
     * Selecting the best performing model based on evaluation metrics.
+  
+
+## Machine Learning Models  
+The following models were evaluated to predict potential customers:  
+- **Random Forest**  
+- **Logistic Regression**  
+- **Decision Tree**  
+
+### Model Evaluation  
+- Metrics: Accuracy, Precision, Recall, and F1-Score.  
+- Hyperparameter tuning was performed to optimize model performance.  
+- Visualizations were created to compare and interpret model results.  
+
+
 
 ## Inspiration
 
